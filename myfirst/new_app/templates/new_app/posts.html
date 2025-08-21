@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+          h2 {
+              color:rgb(149, 126, 171)
+              font-family: 'Arial', Helvetica, sans-serif;
+          }
+
+          #myidea
+          
+    </style>
+    <title>Posts</title>
+</head>
+<body style="background-color: rgb(4, 82, 80);">
+    <h1>All posts:</h1>
+    {% for post in all_posts %}
+         <h2>{{post}}</h2>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Homepage Clone</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for thin scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .nav-link {
+            @apply text-white text-sm px-2 py-1 border border-transparent hover:border-white rounded-sm cursor-pointer;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-[#131921] text-white p-2 flex items-center justify-between sticky top-0 z-50">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <a href="#" class="border border-transparent hover:border-white rounded-sm p-1">
+                <img src="https://placehold.co/100x30/131921/ffffff?text=amazon.in" alt="Amazon Logo" class="h-8">
+            </a>
+        </div>
+
+        <!-- Delivery Location -->
+        <div class="hidden md:flex items-center border border-transparent hover:border-white rounded-sm p-2">
+            <i class="fas fa-map-marker-alt mr-1"></i>
+            <div>
+                <p class="text-xs text-gray-300">Delivering to Prayagraj 211002</p>
+                <p class="text-sm font-bold">Update location</p>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="flex-grow mx-4 flex items-center">
+            <div class="flex w-full">
+                <select class="bg-gray-200 text-black text-xs rounded-l-md px-2 border-r border-gray-400">
+                    <option>All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon.in" class="w-full p-2 text-black focus:outline-none">
+                <button class="bg-[#FEBD69] hover:bg-[#F3A847] text-black px-4 rounded-r-md">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Side Options -->
+        <div class="flex items-center space-x-4">
+            <div class="hidden lg:flex items-center border border-transparent hover:border-white rounded-sm p-2">
+                <i class="fas fa-flag-usa mr-2"></i>
+                <span class="font-bold">EN</span>
+            </div>
+            <div class="border border-transparent hover:border-white rounded-sm p-2">
+                <p class="text-xs">Hello, sign in</p>
+                <p class="text-sm font-bold">Account & Lists</p>
+            </div>
+            <div class="border border-transparent hover:border-white rounded-sm p-2">
+                <p class="text-xs">Returns</p>
+                <p class="text-sm font-bold">& Orders</p>
+            </div>
+            <div class="flex items-center border border-transparent hover:border-white rounded-sm p-2">
+                <i class="fas fa-shopping-cart text-2xl"></i>
+                <span class="ml-1 text-sm font-bold">Cart</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-[#232F3E] text-white p-2 flex items-center text-sm space-x-4">
+        <a href="#" class="nav-link flex items-center"><i class="fas fa-bars mr-1"></i> All</a>
+        <a href="#" class="nav-link">MX Player</a>
+        <a href="#" class="nav-link">Sell</a>
+        <a href="#" class="nav-link">Bestsellers</a>
+        <a href="#" class="nav-link">Today's Deals</a>
+        <a href="#" class="nav-link">Mobiles</a>
+        <a href="#" class="nav-link">Prime</a>
+        <a href="#" class="nav-link">Customer Service</a>
+        <a href="#" class="nav-link">Electronics</a>
+        <a href="#" class="nav-link">Fashion</a>
+        <a href="#" class="nav-link">New Releases</a>
+        <a href="#" class="nav-link">Home & Kitchen</a>
+        <a href="#" class="nav-link">Amazon Pay</a>
+        <a href="#" class="nav-link hidden lg:inline">Computers</a>
+        <a href="#" class="nav-link hidden lg:inline">Books</a>
+        <a href="#" class="nav-link hidden lg:inline">Beauty & Personal Care</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-screen-2xl mx-auto">
+        <!-- Hero Section -->
+        <div class="relative bg-cyan-200 p-8 md:p-12 mb-6">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1500x400/a0e0f0/ffffff?text=Colorful+Toys+Background'); opacity: 0.5;"></div>
+            <div class="relative z-10 flex justify-between items-center">
+                <button class="absolute left-4 text-3xl text-gray-700 bg-white/50 p-4 rounded-full focus:outline-none">&lt;</button>
+                <div class="text-center w-full">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Under ₹499</h1>
+                    <h2 class="text-3xl md:text-4xl text-gray-700 mb-4">Toys and games</h2>
+                    <p class="text-sm text-gray-600">
+                        <span class="font-bold">GREAT</span> PRICES | <span class="font-bold">WIDE</span> SELECTION
+                    </p>
+                    <div class="mt-4 bg-white p-2 inline-flex items-center rounded-lg shadow-md">
+                        <img src="https://placehold.co/40x40/ffffff/000000?text=%" alt="Cashback Icon" class="h-8 w-8 mr-2">
+                        <div>
+                            <p class="font-bold text-sm text-yellow-600">Get extra 5% cashback*</p>
+                            <p class="text-xs text-gray-500">with Amazon Pay ICICI Bank credit card</p>
+                        </div>
+                    </div>
+                     <p class="text-xs text-gray-500 mt-1">*T&C apply <span class="text-blue-600">Select cards only</span></p>
+                </div>
+                <button class="absolute right-4 text-3xl text-gray-700 bg-white/50 p-4 rounded-full focus:outline-none">&gt;</button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Revamp your home in style</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Cushion+covers" class="w-full h-auto rounded-md" alt="Cushion covers">
+                        <p class="text-sm mt-1">Cushion covers, bedsheets & more</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Figurines" class="w-full h-auto rounded-md" alt="Figurines">
+                        <p class="text-sm mt-1">Figurines, vases & more</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Storage" class="w-full h-auto rounded-md" alt="Storage">
+                        <p class="text-sm mt-1"></p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Lighting" class="w-full h-auto rounded-md" alt="Lighting">
+                        <p class="text-sm mt-1"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Appliances for your home | Up to 55% off</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=AC" class="w-full h-auto rounded-md" alt="Air conditioners">
+                        <p class="text-sm mt-1">Air conditioners</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Refrigerator" class="w-full h-auto rounded-md" alt="Refrigerators">
+                        <p class="text-sm mt-1">Refrigerators</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Microwave" class="w-full h-auto rounded-md" alt="Microwaves">
+                        <p class="text-sm mt-1"></p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Washing+Machine" class="w-full h-auto rounded-md" alt="Washing machines">
+                        <p class="text-sm mt-1"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Starting ₹149 | Headphones</h3>
+                 <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <img src="https://placehold.co/200x200/ffffff/000000?text=boAt" class="w-full h-auto" alt="boAt">
+                        <p class="text-sm mt-1">Starting ₹249 | boAt</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/ffffff/000000?text=boult" class="w-full h-auto" alt="boult">
+                        <p class="text-sm mt-1">Starting ₹349 | boult</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/ffffff/000000?text=NOISE" class="w-full h-auto" alt="NOISE">
+                        <p class="text-sm mt-1"></p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/ffffff/000000?text=ZEBRONICS" class="w-full h-auto" alt="ZEBRONICS">
+                        <p class="text-sm mt-1"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Under ₹499 | Deals on home improvement essentials</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Cleaning" class="w-full h-auto rounded-md" alt="Cleaning supplies">
+                        <p class="text-sm mt-1">Under ₹199 | Cleaning supplies</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x2
+                           
