@@ -29,10 +29,18 @@
         }
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
-        }
+        } 
         .nav-link {
-            @apply text-white text-sm px-2 py-1 border border-transparent hover:border-white rounded-sm cursor-pointer;
+            /* Tailwind utility classes for navigation links */
+            color: #fff;
+            font-size: 0.875rem;
+            padding: 0.25rem 0.5rem;
+            border: 1px solid transparent;
+            border-radius: 0.125rem;
+            cursor: pointer;
         }
+        .nav-link:hover {
+            border-color: #08d754;
     </style>
 </head>
 <body class="bg-gray-100">
@@ -215,5 +223,13 @@
                         <p class="text-sm mt-1">Under ₹199 | Cleaning supplies</p>
                     </div>
                     <div>
-                        <img src="https://placehold.co/200x2
-                           
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Storage" class="w-full h-auto rounded-md" alt="Storage solutions">
+                        <p class="text-sm mt-1">Under ₹499 | Storage solutions</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Kitchen+Essentials" class="w-full h-auto rounded-md" alt="Kitchen essentials">
+                        <p class="text-sm mt-1">Under ₹499 | Kitchen essentials</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/200x200/e0e0e0/333?text=Home+Decor" class="w-full h-auto rounded-md" alt="Home decor">
+                        <p class="text-sm mt-1">Under ₹499 | Home decor</p> 
